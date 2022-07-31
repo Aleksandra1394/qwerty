@@ -15,31 +15,26 @@ my_dict={"r":1,}
 #    print(k,v)
 
 
-l1 = [1, 1, 2, 3, 5, 7, 8, 99, 101, 21, 3]
-l2 = [1, 2, 1, 2, 101, 7, 43, 9, 10, -1, 0]
+a = [1, 1, 2, 3, 5, 7, 8, 99, 101, 21, 3]
+b = [1, 2, 1, 2, 101, 7, 43, 9, 10, -1, 0]
 
 
 def my_funk(a, b):
     print(a,b )
 
-    for i in a:
-        print("=======================")
-        print(i)
-        print("=======================")
-        for c in b:
-            if c == i:
-                a.remove(i)
-                print("WWWWWWWW")
-                print(a)
-                print(i, c)
-                print("WWWW")
-        print("!!!!!!!!!!!!!!!!!!!!!!!!")
-    return a
+i=0
+while i < len(a):
+    print(a[i])
 
-print("!!!!!!!!!!!!!!!!!!!!!!!!")
-d= my_funk(l1, l2)
-print(d)
+    print("=======================")
+    print(i)
+    print("=======================")
+    for c in b:
+        if c == a[i]:
+            a.pop(i)
+    i = i+1
 
+print(a)
 
 
 
@@ -57,3 +52,8 @@ for k, v in my_dict.items():
 
 
 
+s= (1,2,3)
+i=0
+while i < len(s):
+    print(s[i])
+    i=i+1
