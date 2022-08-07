@@ -1,0 +1,9 @@
+def generator_function():
+    for i in range(1,10):
+        yield i**2
+
+a=[x for x in range(1,10)]
+print(a)
+
+x=[1,2,3,4,5,6,7,8,9,10]
+a1=(x*2 for x in [1,2,3,4,5,6,7,8,9,10])
